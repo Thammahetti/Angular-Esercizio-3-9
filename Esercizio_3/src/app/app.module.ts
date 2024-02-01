@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ApplicationRef } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -25,5 +25,11 @@ import {MatSliderModule} from '@angular/material/slider';
     provideClientHydration()
   ],
   
+  
 })
-export class AppModule { }
+export class AppModule {
+  constructor(private appRef: ApplicationRef) {}
+  ngDoBootstrap() {
+    this.appRef.bootstrap(AppComponent); // replace this with your actual component
+  }
+ }

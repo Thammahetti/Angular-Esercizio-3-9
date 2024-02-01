@@ -10,10 +10,13 @@ import { FourComponent } from '../four/four.component';
   imports: [ThirdComponent,FourComponent]
 })
 export class SecondComponent {
+  immagineNoot = "../../assets/terrifiednootnoot.jpg";
+  immagineMewing = "../../assets/mewing.gif";
   meme =[
     {
       NomeMeme1 : 'Mewing',
       Info1 : 'Meme of viral technique that supposed to change the appearance of your jawline.',
+      
     },
     {
       NomeMeme1 : 'Noot Noot',

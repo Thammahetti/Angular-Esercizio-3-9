@@ -1,3 +1,5 @@
-<mat-progress-bar mode="determinate" [value]="x"></mat-progress-bar>
+<p class="h1">{{x}}</p>
+<mat-progress-bar [color] = "Colore" mode="determinate" [value]="x"></mat-progress-bar>
 <br>
-<button (click)="cliccaBottone()" mat-raised-button color="primary">Primary</button>
+
+<button [color] = "Colore" (click)="cliccaBottone()" mat-raised-button color="primary">Like me!</button>

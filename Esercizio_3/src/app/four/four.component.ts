@@ -8,5 +8,5 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
   imports: [MatProgressSpinnerModule],
 })
 export class FourComponent {
-
+  ColoreRosso =  "warn"
 }
